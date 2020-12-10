@@ -1,0 +1,25 @@
+initializing the dependency files......
+Opening the browser :-chrome
+Initializing the dependency files......
+Opening the browser :-chrome
+Navigated to :- null
+Selected the option books by using the locator :- searchDropdownBox
+Entered the test Harry Potter by using  locator :-field-keywords
+Clicked on search button by using the locator :-//header/div[@id='navbar']/div[@id='nav-belt']/div[2]/div[1]/form[1]/div[3]/div[1]/span[1]/input[1]
+--------------- Finished TC_003--------------------
+--------------- Started TC_003--------------------
+Initializing the dependency files......
+Opening the browser :-chrome
+Navigated to :- null
+Selected the option books by using the locator :- searchDropdownBox
+Entered the test Harry Potter by using  locator :-field-keywords
+Clicked on search button by using the locator :-//header/div[@id='navbar']/div[@id='nav-belt']/div[2]/div[1]/form[1]/div[3]/div[1]/span[1]/input[1]
+--------------- Ended TC_003--------------------
+--------------- Started TC_003--------------------
+Initializing the dependency files......
+Opening the browser :-chrome
+Navigated to :- https://www.amazon.ca
+Selected the option books by using the locator :- searchDropdownBox
+Entered the test Harry Potter by using  locator :-field-keywords
+Clicked on search button by using the locator :-//header/div[@id='navbar']/div[@id='nav-belt']/div[2]/div[1]/form[1]/div[3]/div[1]/span[1]/input[1]
+--------------- Ended TC_003--------------------
