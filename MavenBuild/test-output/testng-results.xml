@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="1" total="6" passed="5">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Suite" duration-ms="7704" started-at="2020-12-25T21:06:30 EST" finished-at="2020-12-25T21:06:38 EST">
+    <groups>
+    </groups>
+    <test name="Test" duration-ms="7704" started-at="2020-12-25T21:06:30 EST" finished-at="2020-12-25T21:06:38 EST">
+      <class name="com.project.MavenBuild1.NewTest2">
+        <test-method status="PASS" signature="f()[pri:0, instance:com.project.MavenBuild1.NewTest2@15d0c81b]" name="f" duration-ms="0" started-at="2020-12-25T21:06:30 EST" finished-at="2020-12-25T21:06:30 EST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- f -->
+      </class> <!-- com.project.MavenBuild1.NewTest2 -->
+      <class name="com.project.MavenBuild.NewTest">
+        <test-method status="PASS" signature="f()[pri:0, instance:com.project.MavenBuild.NewTest@74650e52]" name="f" duration-ms="3" started-at="2020-12-25T21:06:30 EST" finished-at="2020-12-25T21:06:30 EST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- f -->
+      </class> <!-- com.project.MavenBuild.NewTest -->
+      <class name="com.project.MavenBuild.TNG_002">
+        <test-method status="PASS" signature="startProcess()[pri:0, instance:com.project.MavenBuild.TNG_002@6acdbdf5]" name="startProcess" is-config="true" duration-ms="4481" started-at="2020-12-25T21:06:30 EST" finished-at="2020-12-25T21:06:35 EST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startProcess -->
+        <test-method status="PASS" signature="amazon()[pri:0, instance:com.project.MavenBuild.TNG_002@6acdbdf5]" name="amazon" duration-ms="293" started-at="2020-12-25T21:06:35 EST" finished-at="2020-12-25T21:06:35 EST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- amazon -->
+        <test-method status="PASS" signature="endProcess()[pri:0, instance:com.project.MavenBuild.TNG_002@6acdbdf5]" name="endProcess" is-config="true" duration-ms="2897" started-at="2020-12-25T21:06:35 EST" finished-at="2020-12-25T21:06:38 EST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- endProcess -->
+      </class> <!-- com.project.MavenBuild.TNG_002 -->
+      <class name="com.project.MavenBuild.TNG_001">
+        <test-method status="PASS" signature="beforeSuite()[pri:0, instance:com.project.MavenBuild.TNG_001@1786dec2]" name="beforeSuite" is-config="true" duration-ms="7" started-at="2020-12-25T21:06:30 EST" finished-at="2020-12-25T21:06:30 EST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeSuite -->
+        <test-method status="PASS" signature="beforeTest()[pri:0, instance:com.project.MavenBuild.TNG_001@1786dec2]" name="beforeTest" is-config="true" duration-ms="0" started-at="2020-12-25T21:06:30 EST" finished-at="2020-12-25T21:06:30 EST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeTest -->
+        <test-method status="PASS" signature="f()[pri:1, instance:com.project.MavenBuild.TNG_001@1786dec2]" name="f" duration-ms="1" started-at="2020-12-25T21:06:38 EST" finished-at="2020-12-25T21:06:38 EST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- f -->
+        <test-method status="PASS" signature="beforeClass()[pri:0, instance:com.project.MavenBuild.TNG_001@1786dec2]" name="beforeClass" is-config="true" duration-ms="0" started-at="2020-12-25T21:06:38 EST" finished-at="2020-12-25T21:06:38 EST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeClass -->
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.project.MavenBuild.TNG_001@1786dec2]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2020-12-25T21:06:38 EST" finished-at="2020-12-25T21:06:38 EST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.project.MavenBuild.TNG_001@1786dec2]" name="afterMethod" is-config="true" duration-ms="0" started-at="2020-12-25T21:06:38 EST" finished-at="2020-12-25T21:06:38 EST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.project.MavenBuild.TNG_001@1786dec2]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2020-12-25T21:06:38 EST" finished-at="2020-12-25T21:06:38 EST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="z()[pri:2, instance:com.project.MavenBuild.TNG_001@1786dec2]" name="z" duration-ms="0" started-at="2020-12-25T21:06:38 EST" finished-at="2020-12-25T21:06:38 EST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- z -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.project.MavenBuild.TNG_001@1786dec2]" name="afterMethod" is-config="true" duration-ms="0" started-at="2020-12-25T21:06:38 EST" finished-at="2020-12-25T21:06:38 EST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="afterClass()[pri:0, instance:com.project.MavenBuild.TNG_001@1786dec2]" name="afterClass" is-config="true" duration-ms="0" started-at="2020-12-25T21:06:38 EST" finished-at="2020-12-25T21:06:38 EST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterClass -->
+        <test-method status="PASS" signature="afterTest()[pri:0, instance:com.project.MavenBuild.TNG_001@1786dec2]" name="afterTest" is-config="true" duration-ms="0" started-at="2020-12-25T21:06:38 EST" finished-at="2020-12-25T21:06:38 EST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterTest -->
+        <test-method status="PASS" signature="afterSuite()[pri:0, instance:com.project.MavenBuild.TNG_001@1786dec2]" name="afterSuite" is-config="true" duration-ms="0" started-at="2020-12-25T21:06:38 EST" finished-at="2020-12-25T21:06:38 EST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterSuite -->
+      </class> <!-- com.project.MavenBuild.TNG_001 -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>

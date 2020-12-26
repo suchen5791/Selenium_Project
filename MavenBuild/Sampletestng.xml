@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="SampleSuite">
+  <test thread-count="5" name="SampleTest">
+    <classes>
+      <class name="com.project.MavenBuild.NewTest"/>
+      <class name="com.project.MavenBuild.TNG_002"/>
+      <class name="com.project.MavenBuild.AppTest"/>
+      <class name="com.project.MavenBuild.TNG_001"/>
+    </classes>
+  </test> <!-- SampleTest -->
+</suite> <!-- SampleSuite -->
