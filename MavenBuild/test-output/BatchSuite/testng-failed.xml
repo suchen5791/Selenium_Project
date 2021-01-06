@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [BatchSuite]">
+  <test thread-count="5" name="BatchTest(failed)">
+    <parameter name="browser" value="chrome"/>
+    <groups>
+      <run>
+        <include name="smoke"/>
+      </run>
+    </groups>
+    <classes>
+      <class name="com.project.MavenBuild.RadioButton1">
+        <methods>
+          <include name="afterMethod"/>
+          <include name="radioButtonTest"/>
+          <include name="beforeMethod"/>
+        </methods>
+      </class> <!-- com.project.MavenBuild.RadioButton1 -->
+    </classes>
+  </test> <!-- BatchTest(failed) -->
+</suite> <!-- Failed suite [BatchSuite] -->
