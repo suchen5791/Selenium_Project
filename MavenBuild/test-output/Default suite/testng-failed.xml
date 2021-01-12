@@ -3,13 +3,11 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.project.MavenBuild.TNG_002">
+      <class name="dataDriven.DataReadingByHashTable">
         <methods>
-          <include name="endProcess"/>
-          <include name="amazon"/>
-          <include name="startProcess"/>
+          <include name="f"/>
         </methods>
-      </class> <!-- com.project.MavenBuild.TNG_002 -->
+      </class> <!-- dataDriven.DataReadingByHashTable -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
