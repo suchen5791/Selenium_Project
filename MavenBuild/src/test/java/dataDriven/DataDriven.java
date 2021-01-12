@@ -11,7 +11,7 @@ public class DataDriven
 		int rCount = e1.getRowCount("login");
 		System.out.println(rCount);
 
-		int cCount = e1.getRowCount("login");
+		int cCount = e1.columnCount("login");
 		System.out.println(cCount);
 		
 		
