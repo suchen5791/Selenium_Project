@@ -6,6 +6,7 @@ import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.util.Date;
 import java.util.Properties;
+import java.util.concurrent.TimeUnit;
 
 import org.apache.log4j.PropertyConfigurator;
 import org.openqa.selenium.By;
@@ -20,6 +21,8 @@ import org.openqa.selenium.firefox.FirefoxOptions;
 import org.openqa.selenium.firefox.FirefoxProfile;
 import org.openqa.selenium.firefox.ProfilesIni;
 import org.openqa.selenium.io.FileHandler;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
 import com.relevantcodes.extentreports.ExtentReports;
 import com.relevantcodes.extentreports.ExtentTest;
@@ -51,7 +54,7 @@ public class BaseTest {
 		p = new Properties();
 		p.load(fis);
 
-		// load environment properties
+	// load environment properties
 		fis = new FileInputStream(projectPath + "/environment.properties");
 		parentProp = new Properties();
 		parentProp.load(fis);
@@ -64,19 +67,19 @@ public class BaseTest {
 		String value = childProp.getProperty("amazonurl");
 		System.out.println(value);
 
-		// load Object Repository properties
+	// load Object Repository properties
 		fis = new FileInputStream(projectPath+"/or.properties");
 		orProp = new Properties();
 		orProp.load(fis);
 
-		// load log4j configuration properties
+	// load log4j configuration properties
 		fis =  new FileInputStream(projectPath+"/log4jconfig.properties");
 		PropertyConfigurator.configure(fis);
 
-		//call getInstance method from ExtentManager.java class
+	//call getInstance method from ExtentManager.java class
 		report = ExtentManager.getInstance();
 	}
-
+	// ********************************  Browser Launchings ************************************
 	public static void launch(String browser) {
 
 		if (browser.equals("chrome")) 
@@ -101,6 +104,10 @@ public class BaseTest {
 
 			driver = new FirefoxDriver(option);
 		}
+		
+		driver.manage().window().maximize();
+		driver.manage().timeouts().pageLoadTimeout(30,TimeUnit.SECONDS );
+		//driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
 
 	}
 
@@ -128,7 +135,8 @@ public class BaseTest {
 		//driver.findElement(By.id(orProp.getProperty(locatorKey))).sendKeys(item);
 	}
 
-
+    
+//  ********************************  Get Web Element Information  ***************************************
 
 	public static WebElement getElement(String locatorKey) 
 	{
@@ -179,6 +187,8 @@ public class BaseTest {
 		takeScreenshot();
 
 	}
+	
+//  ********************************  Take Screen Shot  ***************************************
 
 	public static void takeScreenshot() throws Exception 
 	{
@@ -194,8 +204,29 @@ public class BaseTest {
 		test.log(LogStatus.INFO, "Screenshot --->" +test.addScreenCapture(projectPath+"\\failurescreenshots\\"+dateFormat));
 		
 	}
-
-
+	
+  //  ********************************  Close Browser  ***************************************
+	public static void browserClose()
+	{
+		driver.quit();
+	}
+	
+//  ********************************  Wait for Element - SYNCHRONIZATION ***************************************
+	
+	public static void waitForElement(int timeInSeconds, WebElement element, String operationType)
+	{
+		WebDriverWait wait = new WebDriverWait( driver,timeInSeconds);
+		
+		if(operationType.equals("visible") )
+		{
+			wait.until(ExpectedConditions.visibilityOf(element));
+		}
+		else if(operationType.equals("clickable"))
+		{
+			wait.until(ExpectedConditions.elementToBeClickable(element));
+		}
+			
+	}
 
 }
 
