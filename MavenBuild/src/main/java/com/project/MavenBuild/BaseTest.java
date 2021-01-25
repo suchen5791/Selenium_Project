@@ -6,6 +6,7 @@ import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.util.Date;
 import java.util.Properties;
+import java.util.Random;
 import java.util.concurrent.TimeUnit;
 
 import org.apache.log4j.PropertyConfigurator;
@@ -22,6 +23,7 @@ import org.openqa.selenium.firefox.FirefoxProfile;
 import org.openqa.selenium.firefox.ProfilesIni;
 import org.openqa.selenium.io.FileHandler;
 import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 import com.relevantcodes.extentreports.ExtentReports;
@@ -41,20 +43,20 @@ public class BaseTest {
 	public static ExtentTest test;
 	public static String filePath;
 	
-	//Static block for file path
+	//***** Static block for file path ******
 	static
 	{
 		Date dt = new Date();
 		filePath = dt.toString().replace(':', '_').replace(' ', '_');
 	}
 
-	// load data properties
+	//******** load data properties ********
 	public static void init() throws Exception {
 		fis = new FileInputStream(projectPath + "/data.properties");
 		p = new Properties();
 		p.load(fis);
 
-	// load environment properties
+	//********* load environment properties *********
 		fis = new FileInputStream(projectPath + "/environment.properties");
 		parentProp = new Properties();
 		parentProp.load(fis);
@@ -67,18 +69,19 @@ public class BaseTest {
 		String value = childProp.getProperty("amazonurl");
 		System.out.println(value);
 
-	// load Object Repository properties
+	//******** load Object Repository properties **********
 		fis = new FileInputStream(projectPath+"/or.properties");
 		orProp = new Properties();
 		orProp.load(fis);
 
-	// load log4j configuration properties
+	//********* load log4j configuration properties **********
 		fis =  new FileInputStream(projectPath+"/log4jconfig.properties");
 		PropertyConfigurator.configure(fis);
 
-	//call getInstance method from ExtentManager.java class
+	//******call getInstance method from ExtentManager.java class *****
 		report = ExtentManager.getInstance();
 	}
+	
 	// ********************************  Browser Launchings ************************************
 	public static void launch(String browser) {
 
@@ -226,6 +229,24 @@ public class BaseTest {
 			wait.until(ExpectedConditions.elementToBeClickable(element));
 		}
 			
+	}
+	
+// ******************** Generate Random Number ******************
+	public int randomNumber()
+	{
+		Random r = new Random();
+		int ran = r.nextInt(999999);
+		return ran;
+	}
+	
+// ******************** Select reusable function  for drop downs ******************	
+	
+	public void selectOption(WebElement locator, int item) 
+	{
+		Select s = new Select(locator);
+		s.selectByIndex(item);
+		
+		
 	}
 
 }

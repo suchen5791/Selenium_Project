@@ -5,6 +5,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 import com.project.MavenBuild.BaseTest;
@@ -49,7 +50,10 @@ public class CustomerRegistrationPage extends BaseTest
 		//Thread.sleep(3000);
 		waitForElement(60,custEmail,"visible");
 				
-		custEmail.sendKeys("qatest87487@gmail.com");
+		//custEmail.sendKeys("qatest87487@gmail.com");
+		String userName = p.getProperty("firstname")+p.getProperty("lastname")+randomNumber()+p.getProperty("domain");
+		System.out.println(userName);
+		custEmail.sendKeys(userName);
 		Submit.click();
 		
 		//Thread.sleep(3000);
@@ -61,17 +65,28 @@ public class CustomerRegistrationPage extends BaseTest
 		LastName.sendKeys("test");
 		custPassword.sendKeys("password");
 		
-		DOB_day.sendKeys("1");
-		DOB_month.sendKeys("2");
-		DOB_year.sendKeys("3");
+					
+		selectOption(DOB_day, 1);
+		selectOption(DOB_month, 2);
+		selectOption(DOB_year, 3);
+		
+		
+		//DOB_day.sendKeys("1");
+		//DOB_month.sendKeys("2");
+		//DOB_year.sendKeys("2019");
+		
+		
 		Address_1.sendKeys("hyderabad");
 		City.sendKeys("hyderabad");
 		State.sendKeys("california");
 		Postcode.sendKeys("23456");
 		Country.sendKeys("United States");
 		Mobile_Phone.sendKeys("1234567890");
-        //submitAccount.click();		
+        //submitAccount.click();	
+		
+
 	}
-	
+
+
 
 }
