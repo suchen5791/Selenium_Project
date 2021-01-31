@@ -2,20 +2,20 @@
 <testng-results skipped="0" failed="0" ignored="5" total="6" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="7101" started-at="2021-01-31T06:30:20 EST" finished-at="2021-01-31T06:30:27 EST">
+  <suite name="Default suite" duration-ms="7340" started-at="2021-01-31T11:27:58 EST" finished-at="2021-01-31T11:28:05 EST">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="7101" started-at="2021-01-31T06:30:20 EST" finished-at="2021-01-31T06:30:27 EST">
+    <test name="Default test" duration-ms="7340" started-at="2021-01-31T11:27:58 EST" finished-at="2021-01-31T11:28:05 EST">
       <class name="actions.MouseOperations">
-        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:actions.MouseOperations@394e1a0f]" name="beforeMethod" is-config="true" duration-ms="1600" started-at="2021-01-31T06:30:20 EST" finished-at="2021-01-31T06:30:22 EST">
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:actions.MouseOperations@394e1a0f]" name="beforeMethod" is-config="true" duration-ms="1704" started-at="2021-01-31T11:27:58 EST" finished-at="2021-01-31T11:28:00 EST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="autoSuggestion()[pri:7, instance:actions.MouseOperations@394e1a0f]" name="autoSuggestion" duration-ms="5478" started-at="2021-01-31T06:30:22 EST" finished-at="2021-01-31T06:30:27 EST">
+        <test-method status="PASS" signature="autoSuggestion()[pri:7, instance:actions.MouseOperations@394e1a0f]" name="autoSuggestion" duration-ms="5612" started-at="2021-01-31T11:28:00 EST" finished-at="2021-01-31T11:28:05 EST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- autoSuggestion -->
-        <test-method status="PASS" signature="afterMethod()[pri:0, instance:actions.MouseOperations@394e1a0f]" name="afterMethod" is-config="true" duration-ms="0" started-at="2021-01-31T06:30:27 EST" finished-at="2021-01-31T06:30:27 EST">
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:actions.MouseOperations@394e1a0f]" name="afterMethod" is-config="true" duration-ms="1" started-at="2021-01-31T11:28:05 EST" finished-at="2021-01-31T11:28:05 EST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
